@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carros - Login</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    
 </head>
 <body>
     <header class="cor2">
@@ -22,9 +22,13 @@
         <form id="loginForm" onsubmit="return validateLogin()">
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="username">
+
             <label for="password">Senha:</label>
             <input type="password" id="password" name="password">
-            <button type="submit">Entrar</button>
+
+            <button type="submit"></button>
+            <input type="submit" class="enviar" onclick="Enviar(changePage());" value="Enviar" />
+            <script src="js/script.js" defer></script>
         </form>
     </main>
     <footer class="cor2">
