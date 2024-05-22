@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros - Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cor3">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+            <a href="login.html">Login</a>
+            <a href="quiz.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Quiz sobre Carros</h1>
+        <form id="quizForm" onsubmit="return submitQuiz()">
+            <div class="question">
+                <p>1. Qual a marca do carro mais vendido em 2020?</p>
+                <label><input type="radio" name="q1" value="a"> Toyota</label><br>
+                <label><input type="radio" name="q1" value="b"> Ford</label><br>
+                <label><input type="radio" name="q1" value="c"> Honda</label><br>
+                <label><input type="radio" name="q1" value="d"> BMW</label>
+            </div>
+    
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="quizResult"></div>
+    </main>
+    <footer class="cor3">
+        <p>&copy; 2024 Carros</p>
+    </footer>
+</body>
+</html>
